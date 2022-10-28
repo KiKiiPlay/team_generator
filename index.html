@@ -23,9 +23,9 @@
             <div class="teams">
               <span>Teams</span>
               <div class="team_quantity">
-                <button>-</button>
-                <span>0</span>
-                <button>+</button>
+                <button onclick="decreaseTeam()">-</button>
+                <span id="team_quantity_val">0</span>
+                <button onclick="increaseTeam()">+</button>
               </div>
             </div>
           </div>
@@ -33,8 +33,10 @@
             <!-- <span>name1</span> -->
           </div>
           <div class="bottom_buttons flex">
-            <button id="assign">Assign Member</button>
-            <button id="reset">Reset</button>
+            <button id="assign" onclick="randomizeTeams()">
+              Assign Member
+            </button>
+            <button id="reset" onclick="reset()">Reset</button>
           </div>
         </div>
         <div class="right_part flex">
