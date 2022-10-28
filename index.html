@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <header><h1>TEAM GENERATOR</h1></header>
+      <div class="bottom_part flex">
+        <div class="left_part flex">
+          <div class="input_values flex">
+            <div class="add_members">
+              <span>Add Member</span>
+              <div class="input_button flex">
+                <input type="text" id="name" />
+                <button>Add</button>
+              </div>
+            </div>
+            <div class="teams">
+              <span>Teams</span>
+              <div class="team_quantity">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="name_container flex">
+            <!-- <span>name1</span> -->
+          </div>
+          <div class="bottom_buttons flex">
+            <button id="assign">Assign Member</button>
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+        <div class="right_part flex">
+          <!-- <div class="container_with_text">
+            <span>1</span>
+            <div class="team_container"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

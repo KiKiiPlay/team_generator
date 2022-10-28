@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 60%;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+.left_part,
+.add_members,
+.teams {
+  flex-direction: column;
+}
+
+.name_container {
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.input_values {
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
+
+.input_button > input {
+  height: 25px;
+}
+
+.teams {
+  margin-right: 50px;
+}
+
+.teams > button {
+  height: 25px;
+}
+
+.name_container {
+  flex-direction: column;
+}
+
+#assign {
+  flex-grow: 9;
+}
+
+#reset {
+  flex-grow: 1;
+}
+
+.right_part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.team_container {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+}
