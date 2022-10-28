@@ -49,6 +49,8 @@ body {
 
 .name_container {
   flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 #assign {
