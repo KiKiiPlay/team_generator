@@ -1,13 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap");
+
 body {
   margin: 0;
   background-color: #e8e8e8;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  user-select: none;
 }
 
 .flex {
   display: flex;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 40px;
 }
 
 .container {
@@ -30,17 +39,34 @@ body {
 }
 
 .input_values {
+  margin: 0;
+  margin-bottom: 20px;
   justify-content: space-between;
-  margin-left: 50px;
-  margin-bottom: 25px;
 }
 
 .input_button > input {
-  height: 25px;
+  height: 35px;
+  width: 300px;
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+}
+
+.input_button > button {
+  background-color: #697cf7;
+  border: 0;
+  border-radius: 5px;
+  width: 50px;
+  color: white;
+  font-size: 16px;
+}
+
+#add_text,
+#teams_text {
+  font-weight: bold;
 }
 
 .teams {
-  margin-right: 50px;
+  margin: 0;
 }
 
 .teams > button {
@@ -53,18 +79,10 @@ body {
   overflow-y: auto;
 }
 
-#assign {
-  flex-grow: 9;
-}
-
-#reset {
-  flex-grow: 1;
-}
-
 .right_part {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 25px;
   margin-left: 20px;
 }
 
@@ -72,4 +90,38 @@ body {
   width: 110px;
   height: 160px;
   background-color: white;
+  border-radius: 5px;
+  border: 2px outset #e8e8e8;
+  padding: 20px;
+}
+
+.team_quantity button {
+  border: 0;
+  background-color: #697cf7;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+  aspect-ratio: 1/1;
+}
+
+.bottom_buttons {
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.bottom_buttons button {
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+}
+
+#assign {
+  background-color: #697cf7;
+  width: 420px;
+}
+
+#reset {
+  background-color: #9d4547;
+  width: 70px;
 }

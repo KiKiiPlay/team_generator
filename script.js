@@ -38,10 +38,6 @@ const decreaseTeam = function () {
   }
 };
 
-// const getVal = function () {
-//   console.log(startVal);
-// };
-
 const randomizeTeams = function () {
   let currentIndex = teamsArr.length,
     randomIndex;
@@ -69,8 +65,8 @@ const randomizeTeams = function () {
     }
     team_blocks.innerHTML += `
     <div class="container_with_text">
-    <span>Team ${(teamNum += 1)}</span>
-    <div class="team_container">${tempArr}</div>
+    <span id="team_num_prop">Team ${(teamNum += 1)}</span>
+    <div class="team_container"><span id="participant">${tempArr}</span></div>
   </div>`;
     tempArr = [];
   }
