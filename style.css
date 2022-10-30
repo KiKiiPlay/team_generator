@@ -125,3 +125,18 @@ header h1 {
   background-color: #9d4547;
   width: 70px;
 }
+
+.name_container_list {
+  list-style: none;
+  padding: 0;
+}
+
+.name_container_list li {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.name_container_list li hr {
+  width: 90%;
+  margin-right: 38px;
+}

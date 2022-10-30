@@ -1,4 +1,4 @@
-const namesField = document.querySelector(".name_container");
+const namesField = document.querySelector(".name_container_list");
 const nameInput = document.getElementById("name");
 const team_blocks = document.querySelector(".right_part");
 let teamQuantity = document.getElementById("team_quantity_val");
@@ -10,8 +10,8 @@ let tempArr = [];
 
 const newName = function () {
   let name = nameInput.value;
-  const newNameElement = document.createElement("span");
-  newNameElement.innerText = name;
+  const newNameElement = document.createElement("li");
+  newNameElement.innerHTML = `${name}<hr/>`;
   namesField.appendChild(newNameElement);
   teamsArr.push(name);
   nameInput.value = "";
